@@ -1,5 +1,5 @@
 {
-  "name": "bigint-buffer",
+  "name": "bigint-buffer2",
   "version": "1.1.5",
   "description": "bigint to buffer conversion with native support",
   "main": "dist/node.js",
@@ -14,7 +14,6 @@
     "lint": "gts check",
     "install": "npm run rebuild || echo \"Couldn't build bindings. Non-native version used.\"",
     "prepare": "npm run compile",
-    "prepublishOnly": "rm -rf build/Release; rm build/Makefile; rm build/gyp-*; rm build/*.mk; rm build/*.Makefile; rm *.tgz",
     "test:browser": "karma start karma.conf.js",
     "test:node": "mocha -r ts-node/register src/**/*.spec.ts --timeout 40000",
     "benchmark": "node -r ts-node/register src/index.bench.ts",
@@ -84,6 +83,7 @@
     "access": "public"
   },
   "contributors": [
+    "huruji <huruji3@foxmail.com> (https://github.com/huruji)",
     "Michael Wei <mwei@vmware.com> (https://github.com/no2chem)"
   ]
 }
